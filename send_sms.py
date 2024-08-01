@@ -9,10 +9,10 @@ client = Client(account_sid, auth_token)
 
 # List of phone numbers to send SMS to
 phone_numbers = [
-    '+255686751278',  # Add the phone numbers you want to send SMS to
-    '+255613048665',
-    '+255675666780',
-    '+255627828665',
+    '+25568.....',  # Add the phone numbers you want to send SMS to
+    '+25561.....',
+    '+25567.....',
+    '+25562.....',
 ]
 
 # Message to send
@@ -23,7 +23,7 @@ for number in phone_numbers:
     try:
         message = client.messages.create(
             to=number,
-            from_="+12513877037",  # Your Twilio phone number
+            from_="+.........",  # Your Twilio phone number
             body=message
         )
         print(f"Message sent to {number} with SID: {message.sid}")
